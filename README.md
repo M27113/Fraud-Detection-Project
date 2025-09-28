@@ -39,7 +39,10 @@ The dataset contains transaction records for 30 days (744 hourly steps), with th
 - `isFraud`: Target variable indicating fraudulent transactions  
 - `isFlaggedFraud`: Flags illegal transfers >200,000  
 
-**Data Source:** (link or reference to dataset if public)
+**Data Source:** 
+
+You can access the project dataset here: [Dataset](https://drive.google.com/uc?export=download&id=1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV)
+
 
 ---
 
@@ -58,9 +61,6 @@ Key visualizations generated during EDA:
 
 2. **Correlation Matrix:**  
    ![Correlation Matrix](outputs/correlation_matrix.png)
-
-3. **Distribution of Key Features:**  
-   *(Add histograms or boxplots as needed)*
 
 ---
 
@@ -91,6 +91,7 @@ Key visualizations generated during EDA:
 ---
 
 ## Model Evaluation
+
 - **Classification Report:** Precision, Recall, F1-score for fraud detection.  
 - **ROC-AUC Score:** Measures the model's ability to distinguish between classes.  
 - **Confusion Matrix:**  
@@ -98,10 +99,13 @@ Key visualizations generated during EDA:
 
 - **Top 10 Feature Importances:**  
   ![Feature Importance](outputs/feature_importance.png)
-
+  
+-  **Precision-Recall Curve & PR-AUC:**
+   ![Precision-Recall Curve](outputs/precision_recall_curve.png)
 ---
 
 ## Key Findings
+
 - **Top Predictors of Fraud:**  
   - `amount`, `oldbalanceOrg`, `newbalanceOrig`  
   - `type_TRANSFER`, `type_CASH_OUT`  
@@ -110,6 +114,7 @@ Key visualizations generated during EDA:
 ---
 
 ## Prevention Measures & Monitoring
+
 - Implement **real-time transaction monitoring** and alerts.  
 - Set **threshold-based controls** for large transactions.  
 - Retrain models periodically to capture evolving fraud patterns.  
@@ -125,9 +130,7 @@ All outputs are saved in the `outputs/` folder:
 - `confusion_matrix.png` – Model predictions vs actual  
 - `feature_importance.png` – Top predictive features  
 - `xgb_fraud_model.pkl` – Trained XGBoost model  
-
-Include these images in the README using Markdown syntax as shown above.
-
+-  `precision_recall_curve.png` –  Precision vs Recall
 ---
 
 ## How to Run
@@ -148,3 +151,11 @@ Include these images in the README using Markdown syntax as shown above.
 
 
 4. Check the outputs/ folder for generated images, model, and README.md file.
+
+## Acknowledgements
+
+- ACCREDIAN assignment dataset
+
+- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost
+
+- Inspired by best practices for fraud detection in financial institutions
