@@ -1,14 +1,20 @@
-# Fraud-Detection-Project
+# Fraud Detection Project
 
-## Project Overview
-This project focuses on developing a machine learning model to detect fraudulent transactions in a large financial dataset (~6.3 million records). The objective is to build a model that can identify suspicious activity, minimize false positives, and provide actionable insights for prevention strategies.
+## Overview
 
-The workflow covers:
-- Data cleaning and preprocessing
-- Exploratory data analysis (EDA)
-- Feature engineering and selection
-- Model training and evaluation
-- Interpretation and actionable recommendations
+This project aims to develop a machine learning model to detect fraudulent transactions in a financial dataset. The goal is to identify suspicious activities and provide actionable insights for prevention strategies.
+
+## Dataset
+
+The dataset used in this project contains transaction records with features such as transaction amount, account balances, and transaction type. It is sourced from [Google Drive](https://drive.google.com/uc?export=download&id=1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV).
+
+## Objectives
+
+- Perform data cleaning and preprocessing.
+- Conduct exploratory data analysis (EDA).
+- Engineer relevant features.
+- Develop and evaluate a machine learning model.
+- Provide insights and recommendations.
 
 ---
 
@@ -152,27 +158,35 @@ All outputs are saved in the `outputs/` folder:
 ---
 
 ## How to Run
-1. Clone the repository:  
-   ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+1. Clone the repository and install the required dependencies:
 
-2. Install dependencies:
    ```bash
+   git clone https://github.com/M27113/Fraud-Detection-Project.git
+   cd Fraud-Detection-Project
    pip install -r requirements.txt
 
 
-3. Open the Jupyter Notebook:
+2. Usage
+
+- Launch the Jupyter Notebook:
      ```bash
      jupyter notebook Fraud_Detection.ipynb
 
 
 
-4. Check the outputs/ folder for generated images, model, and README.md file.
+3. Outputs
+
+- Generated outputs are saved in the outputs/ directory, including:
+
+   - Visualizations
+
+   - Trained models
+
+   - Evaluation metrics
 
 ## Acknowledgements
 
-- ACCREDIAN assignment dataset
+- Dataset sourced from [Google Drive](https://drive.google.com/uc?export=download&id=1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV).
 
 - Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost
 
