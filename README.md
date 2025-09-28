@@ -103,6 +103,23 @@ Key visualizations generated during EDA:
 -  **Precision-Recall Curve & PR-AUC:**
   
    ![Precision-Recall Curve](outputs/precision_recall.png)
+
+-  **Model Performance**  
+     - Classification Report:
+    ```
+                    precision    recall  f1-score   support
+      
+                 0     1.0000    0.9913    0.9956   1270881
+                 1     0.1291    0.9988    0.2287      1643
+       
+          accuracy                         0.9913   1272524
+         macro avg     0.5646    0.9950    0.6122   1272524
+      weighted avg     0.9989    0.9913    0.9946   1272524
+   
+  ```
+      
+      - ROC-AUC Score: 0.9997
+```
 ---
 
 ## Key Findings
