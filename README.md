@@ -142,8 +142,8 @@ Include these images in the README using Markdown syntax as shown above.
 
 
 3. Open the Jupyter Notebook:
-  ```bash
-  jupyter notebook Fraud_Detection.ipynb
+     ```bash
+     jupyter notebook Fraud_Detection.ipynb
 
 
 
