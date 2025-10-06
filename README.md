@@ -36,6 +36,10 @@ The dataset used in this project contains transaction records with features such
 
 ## Dataset Description
 The dataset contains transaction records for 30 days (744 hourly steps), with the following key columns:  
+- Dataset Summary
+  - Total Rows: 6,362,620
+  
+  - Total Columns: 10
 - `step`: Time step (1 step = 1 hour)  
 - `type`: Transaction type (`CASH-IN`, `CASH-OUT`, `DEBIT`, `PAYMENT`, `TRANSFER`)  
 - `amount`: Transaction amount in local currency  
@@ -43,7 +47,7 @@ The dataset contains transaction records for 30 days (744 hourly steps), with th
 - `oldbalanceOrg` / `newbalanceOrig`: Sender balances before and after transaction  
 - `oldbalanceDest` / `newbalanceDest`: Recipient balances (not available for merchants)  
 - `isFraud`: Target variable indicating fraudulent transactions  
-- `isFlaggedFraud`: Flags illegal transfers >200,000  
+- `isFlaggedFraud`: Flags illegal transfers >200,000
 
 **Data Source:** 
 
